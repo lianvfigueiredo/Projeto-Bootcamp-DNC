@@ -57,6 +57,25 @@
         .blackBackground{
             background-color: rgb(34, 32, 32);
         }
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+        }
+        label, button{
+            display: block;
+            color: white;
+            margin: 5px 0;
+        }
+        input{
+            color: white;
+        }
+        #form p{
+            text-align: center;
+            color:white;
+            margin:5px 0;
+        }
 
     </style>
 </head>
@@ -80,9 +99,33 @@
             semana intensiva de conteúdo de mercado entre<br>
             <span class="blackBackground">BACK-END, FRONT-END & BANCO DE DADOS.</span></p>
         </div>
-    </div>
-    <div id="form">
+        <div id="form">
+            <form action="" method="POST">
+                <label>Nome:</label>
+                <input name="Nome" placeholder="Insira seu nome aqui" type="text">
 
+                <label>Sobrenome:</label>
+                <input name="Sobrenome" placeholder="Insira seu sobrenome aqui" type="text">
+
+                <label>Área de Interesse:</label>
+                <p>
+                <input type="checkbox" value="Front-End" name="Interesses">Front-End
+                <input type="checkbox" value="Back-End" name="Interesses">Back-End
+                <input type="checkbox" value="Banco de Dados" name="Interesses">Banco de Dados
+                </p>
+                
+                <label>E-mail:</label>
+                <input name="E-mail" placeholder="Insira seu e-mail aqui" type="text">
+
+                <label>Telefone:</label>
+                <input name="Telefone" placeholder="(99) 99999-9999" type="text">
+
+                <label>Insira uma frase criativa aqui:</label>
+                <input name="frase_criativa" placeholder="Qual frase criativa você gostaria de falar? :)" type="text">
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </div>
     <div id="footer">
 
