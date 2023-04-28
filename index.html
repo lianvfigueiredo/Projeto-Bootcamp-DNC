@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp DNC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <style>
 
         body{
+            font-family: 'Poppins', sans-serif;
             margin:0px;
         }
         #header{
@@ -27,22 +31,24 @@
             color: white;
         }
         #login{
-            position: fixed;
+            position: absolute;
             right: 25px;
             background-color: blue;
             height: 25px;
             width: 60px;      
-            padding: 4px 0 0 3px;
         }
         #login a{
             margin-left: -5px;
         }
         #body{
-            background-image: linear-gradient(to bottom, rgb(26, 26, 212) 22%,
-             rgb(52, 50, 50) 31%);
-            height: 800px;
+            background-image: linear-gradient(to bottom,
+             rgb(26, 26, 212) 26%,
+             rgb(52, 50, 50) 32%);
+            height: 950px;
         }
-        #presentation{
+        #presentation{    
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
             text-align: center;
             color: white;
         }
@@ -51,18 +57,21 @@
             padding-top: 30px;
         }
         #presentation p{
-            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
             margin-top: 15px;
         }
-        .blackBackground{
+        .standOut{
             background-color: rgb(34, 32, 32);
+            padding: 0 5px;
         }
-
         #form{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 80px;
+            margin-top: 90px;
         }
         label, button{
             display: block;
@@ -75,9 +84,11 @@
             margin: 40px auto;
             background-color: rgb(61, 61, 255);
             border: none;
-            width: 312px;
+            width: 342px;
             height: 35px;
             border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
         }
         input{
             color: white;
@@ -85,15 +96,26 @@
         #form p{
             text-align: center;
             color:white;
-            margin:5px 0;
+            margin: 0 -6px 7px 0;
+            font-size: 15px;
+        }
+        #form p input{
+            margin-left:7px;
         }
         .box{
-            width: 300px;
+            width: 330px;
             height: 30px;
             padding: 2px;
             padding-left: 10px;
             border-radius: 6px;
             border: none;
+        }
+        #form p input[type="checkbox"]:first-child{
+            margin-left: -7px;
+        }
+        #check{
+            margin-top: 15px;
+            margin-bottom: 0px;
         }
         ::placeholder{
             color:rgb(176, 168, 168);
@@ -147,7 +169,6 @@
     </style>
 </head>
 <body>
-
     <div id="header">
         <div id="links">
             <a id="links" href="">Home</a>
@@ -160,11 +181,11 @@
     </div>
     <div id="body">
         <div id="presentation">
-            <h1>BOOTCAMP DNC</h1>
+            <h1><b>BOOTCAMP DNC</b></h1>
             <p>Esse será um evento exclusivo para todos os alunos<br>
-            da <b>DNC</b>, que querem <span class="blackBackground">acelerar a carreira</span> com uma<br>
+            da <b>DNC</b>, que querem <span class="standOut"><b>acelerar a carreira</b></span> com uma<br>
             semana intensiva de conteúdo de mercado entre<br>
-            <span class="blackBackground">BACK-END, FRONT-END & BANCO DE DADOS.</span></p>
+            <span class="standOut"><b>BACK-END, FRONT-END & BANCO DE DADOS.</b></span></p>
         </div>
 
         <div id="form">
@@ -175,9 +196,9 @@
                 <label>Sobrenome:</label>
                 <input class="box" name="Sobrenome" placeholder="Insira seu sobrenome aqui" type="text">
 
-                <label>Área de Interesse:</label>
+                <label id="check">Área de Interesse:</label>
                 <p>
-                <input type="checkbox" value="Front-End" name="Interesses">Front-End
+                <input id="checkbox" type="checkbox" value="Front-End" name="Interesses">Front-End
                 <input type="checkbox" value="Back-End" name="Interesses">Back-End
                 <input type="checkbox" value="Banco de Dados" name="Interesses">Banco de Dados
                 </p>
