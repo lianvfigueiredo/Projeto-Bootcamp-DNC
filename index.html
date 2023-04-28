@@ -98,6 +98,52 @@
         ::placeholder{
             color:rgb(176, 168, 168);
         }
+        #footer{
+            background-color: rgb(46, 153, 252);
+        }
+        #content{
+            grid-auto-flow: column;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            color: rgb(254, 247, 236);
+            padding-bottom: 20px;
+        }
+        #redirect{
+            grid-auto-flow: column;
+            display: grid;
+        }
+        .redirect{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        .redirect span{
+            background-color: rgb(37, 35, 35);
+            padding: 5px;
+            border-radius: 6px;
+        }
+        .redirect a{
+            text-decoration: none;
+            color: rgb(254, 247, 236);
+            margin-top: 12px;
+        }
+        #data{
+            font-size: 12px;
+            padding-top: 30px;
+        }
+        #terms{
+            color: rgb(254, 247, 236);
+            text-align: center;
+            padding-bottom: 1px;
+        }
+        #terms a{
+            text-decoration: none;
+            color: rgb(254, 247, 236);
+        }
     </style>
 </head>
 <body>
@@ -150,7 +196,38 @@
         </div>
     </div>
     <div id="footer">
-
+        <div id="content">
+            <div id="redirect">
+                <div class="redirect">
+                    <span>Escolas</span>
+                    <a href="">Formação em Tecnologia</a>
+                    <a href="">Formação em Marketing</a>
+                    <a href="">Formação em Dados</a>
+                    <a href="">Formação em Projetos</a>
+                    <a href="">Formação em Produto</a>
+                </div>
+                <div class="redirect">
+                    <span>Sobre a DNC</span>
+                    <a href="">História</a>
+                    <a href="">Missão e Valores</a>
+                    <a href="">Trabalhe Conosco</a>
+                    <a href="">Conteúdo Gratuito</a>
+                </div>
+            </div>
+            <div id="data">
+                <p>© 2022 DTC Treinamentos & Consultoria<br>
+                   LTDA | CNPJ: 27.995.577/0001-37 |R.<br>
+                   Justino Cobra, 61 - Vila Ema | São José dos<br>
+                   Campos - SP | CEP 12243-030
+            </div>
+        </div>
+        <div id="terms">
+            <p>
+                <a href="">Termos de Uso</a>
+                |
+                <a href="">Política de Privacidade</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
